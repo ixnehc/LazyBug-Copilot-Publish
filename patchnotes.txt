@@ -1,0 +1,12 @@
+﻿0.11~0.13.2
+
+Support multiple keywords in text search and symbol query
+User message now shows the tag instead of the plain text
+Fix the "thought signature" issue of Gemini api format
+Fix a cost statistic mistake for OpenAI-compatible LLM api format
+Add a "modified files" summarize frame at the end of each session
+
+0.14
+Image attachment support, you can now paste image or image file into the chat input window
+Chat input window improvement/bug fix. (tag copy-paste, undo-redo)
+Fix a symbol parsing issue resulting in function body not fully retrieved. Note the fix will trigger a full symbol database rebuild.
