@@ -12,6 +12,21 @@ LazyBug is a "Cursor-like" intelligent coding assistant extension designed speci
 
 ---
 
+## Version 0.18.1 Release Notes
+
+- Improved context compression quality
+- Log the context compression results
+- Added an "Evaluate" button for the selected "Compress & Summarize" API on the settings page
+- Fixed an issue where showing the code diff would remove breakpoints and bookmarks
+- Added a stripe on the left side of the code window to indicate that the editor is currently in code diff mode
+- In the chat window, collapsed all exploration operations (file reading, keyword searching, etc.)
+- Fixed an issue where chat title generation would occasionally fail
+- Improved symbol link recognition in the chat window (more links are now recognized)
+- Fixed a crash that occurred when displaying skill tips
+- Improved CLI tool command-line error tolerance
+
+---
+
 ## Core Features
 
 **1. Intelligent Chat System**
