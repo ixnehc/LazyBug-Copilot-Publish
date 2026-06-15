@@ -7,7 +7,7 @@
 
 LazyBug is a "Cursor-like" intelligent coding assistant extension designed specifically for Visual Studio. It integrates Large Language Model (LLM) capabilities to provide developers with intelligent code creation, refactoring, and Q&A experiences. The extension supports multiple mainstream AI service providers, enabling developers to enjoy AI-assisted programming within their familiar IDE environment.
 
-![screenshot__1.gif](screenshot__1.gif)
+![screenshot](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/screenshot.gif)
 
 ---
 
@@ -54,7 +54,7 @@ _See below for full version history_
 
 **4. Smart Input Box**
 
-![chatinput2.jpg](chatinput2.jpg)
+![chatinput](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/chatinput.jpg)
 
 - Uses a tag system to manage attached files.
 - Auto-completion: trigger file/symbol auto-completion using the `@` symbol.
@@ -62,11 +62,11 @@ _See below for full version history_
 - Quickly switch between Large Language Models.
 - Paste an image directly into the input window and send it to the LLM.
 
-![image_support2__1.jpg](image_support2__1.jpg)
+![image support](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/image_support2.jpg)
 
 **5. Multi-Model Support**
 
-![provider.jpg](provider.jpg)
+![provider](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/provider.jpg)
 
 - Default API Providers:
   - OpenAI (GPT-5, etc.)
@@ -87,25 +87,25 @@ _See below for full version history_
 
 - Skill system supported, with a panel to browse, create, rename, and toggle skills.
 
-![skill.jpg](skill.jpg)
+![skill](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/skill.jpg)
 
 - `global_rules.txt` and `project_rules.txt` for writing global and project-specific prompts.
 - `cli_whitelist.ini` for adding trusted CLI commands.
 
-![settings2__1.jpg](settings2__1.jpg)
+![settings](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/settings2.jpg)
 
 **7. CLI Tool**
 
 - CLI tool supported, with skills to extend capabilities beyond coding.
 
-![output_10fps.gif](output_10fps.gif)
+![output](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/output_10fps.gif)
 
 **8. Context Usage Control**
 
 - Displays real-time context usage.
 - Set different context levels (5 levels total) to control the context size range.
 
-![contextlevel.jpg](contextlevel.jpg)
+![contextlevel](https://raw.githubusercontent.com/ixnehc/LazyBug-Copilot-Publish/main/screenshots/contextlevel.jpg)
 
 - If context usage exceeds the current level's upper bound, context compression is triggered automatically.
 - Context decompression is triggered when a higher context level is set.
