@@ -2,6 +2,7 @@
 
 [![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Marketplace-Install-blue?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 [![Version](https://img.shields.io/badge/version-0.18.1-blue)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-purple?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 
 ## Product Overview
 
