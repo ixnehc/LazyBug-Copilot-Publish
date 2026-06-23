@@ -1,7 +1,7 @@
 ﻿# LazyBug - Visual Studio AI Coding Assistant Extension
 
-[![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Marketplace-Install-blue?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
-[![Version](https://img.shields.io/badge/version-0.18.1-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
+[![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Marketplace-Install-orange?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
+[![Version](https://img.shields.io/badge/version-0.19-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-purple?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 
 ## Product Overview
@@ -41,6 +41,7 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
 - **Multi-Turn Intelligent Chat** — Markdown-based chat content. Session history stored per VS solution.
 - **Symbol Link Recognition** — Clickable symbol links in the chat window for quick navigation to definitions.
 - **Smart Code Editing** — AI directly modifies project files with multi-file support, before/after Diff View, modification tracking, undo/redo , and file backup.
+- **Automatic Code Database** — Automatically builds a code database from all files in your solution for fast search and context retrieval.
 - **Codebase Search** — Fast text and symbol search for ultra-large projects (million-line scale, C/C++/C#). Text search is significantly faster than ripgrep, especially in large codebases. Symbol search works out of the box — no LSP configuration required. AI automatically reads related files for context.
 - **Smart Input Box** — Tag-based file attachment system with `@` auto-completion, input history (`PageUp`/`PageDown`), quick model switching, and direct image paste.
 
@@ -111,18 +112,29 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
   - Many existing skills exist in the ecosystem and may have compatibility issues with LazyBug. You may need to tweak them until they work smoothly.
   - You are always encouraged to use AI to edit existing skills or create new ones.
   - Install the necessary environments (Node.js, Python, GIT, etc.) to support various CLI commands.
-- **Context Level Settings**:
+- **How Context Level Works**:
+  - When context usage reaches a level's upper limit (threshold), LazyBug compresses the context down to the target lower limit. This keeps conversations sustainable without unbounded token growth.
+
+    | Level   | Threshold (upper) | Target (lower) |
+    |---------|-------------------|----------------|
+    | Level 1 | 30k tokens        | 10k tokens     |
+    | Level 2 | 50k tokens        | 30k tokens     |
+    | Level 3 | 100k tokens       | 50k tokens     |
+    | Level 4 | 200k tokens       | 100k tokens    |
+    | Level 5 | 500k tokens       | 200k tokens    |
+
+- **Context Level Settings Consideration**:
   - Higher context levels consume more tokens and incur higher costs, especially on expensive models.
   - However, higher context levels reduce the frequency of compression, which improves cache hit rates and can also lower costs to some extent.
   - Currently, context is not compressed within a single Q&A turn to avoid cache miss.
   - Compression is not unlimited — it will always preserve a baseline answer quality. So even if you set a low context level, sometimes context usage may still significantly exceed the upper limit.
   - That said, compression will more or less degrade the model's answer quality.
-  - **Overall recommendation**: For expensive models (Anthropic, GPT), set the lowest context level (<30k tokens), unless you notice a significant drop in answer quality.
+  - **Overall recommendation**: For expensive models (Anthropic, GPT), set the lowest context level (Level 1, < 30k tokens), unless you notice a significant drop in answer quality.
 
 ---
 
-## Contact Us
+## Report an Issue
 
-If you encounter any bugs or have suggestions for improvement, please feel free to reach out via email. Your feedback is the driving force behind our continuous improvement!
+If you encounter any bugs or have suggestions for improvement, please submit an issue on GitHub. Your feedback is the driving force behind our continuous improvement!
 
-- 📧 **Contact Email**: [ixnehc1974@gmail.com](mailto:ixnehc1974@gmail.com)
+- 🐛 **GitHub Issues**: [https://github.com/ixnehc/LazyBug-Copilot-Publish/issues](https://github.com/ixnehc/LazyBug-Copilot-Publish/issues)
