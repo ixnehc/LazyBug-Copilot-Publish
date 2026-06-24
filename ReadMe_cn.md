@@ -76,7 +76,7 @@ _完整版本历史请参见 [patchnotes.md](https://github.com/ixnehc/LazyBug-C
 
 - **CLI 工具集成** — 直接在聊天中执行 cmd.exe、bash.exe、python脚本，扩展编程之外的能力。
 
-![output](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/output_10fps.gif)
+<img src="https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/output_10fps.gif" width="500" />
 
 - **上下文使用控制** — 实时显示上下文使用量，提供 5 个上下文级别。即使在极长对话中也能将上下文保持在较低水平（< 30k tokens），同时保持较高的回答质量。上下文级别变化时自动压缩/解压。
 
