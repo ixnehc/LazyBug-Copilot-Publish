@@ -117,6 +117,10 @@ _完整版本历史请参见 [patchnotes.md](https://github.com/ixnehc/LazyBug-C
   - 生态系统中存在许多现有技能，可能与 LazyBug 存在兼容性问题。你可能需要调整它们直到运行顺畅。
   - 鼓励你使用 AI 编辑现有技能或创建新技能。
   - 安装必要的运行环境（Node.js、Python、GIT 等）以支持各种 CLI 命令。
+- **压缩模型选择**：使用 **Evaluate** 按钮来评估当前选择的压缩模型的速度、可靠性和压缩质量，帮助你选择合适的压缩模型。
+
+  ![evaluate](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/evaluate.jpg)
+
 - **上下文等级工作机制**：
   - 当上下文使用量达到某个等级的上限（阈值）时，LazyBug 会将上下文压缩到目标下限。这使对话可持续进行，避免 token 无限增长。
 

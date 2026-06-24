@@ -116,6 +116,10 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
   - Many existing skills exist in the ecosystem and may have compatibility issues with LazyBug. You may need to tweak them until they work smoothly.
   - You are always encouraged to use AI to edit existing skills or create new ones.
   - Install the necessary environments (Node.js, Python, GIT, etc.) to support various CLI commands.
+- **Compression Model Selection**: Use the **Evaluate** button to assess the speed, reliability, and compression quality of the currently selected compression model, helping you choose the most suitable one.
+
+  ![evaluate](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/evaluate.jpg)
+
 - **How Context Level Works**:
   - When context usage reaches a level's upper limit (threshold), LazyBug compresses the context down to the target lower limit. This keeps conversations sustainable without unbounded token growth.
 
