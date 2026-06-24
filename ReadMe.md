@@ -4,9 +4,11 @@
 [![Version](https://img.shields.io/badge/version-0.19-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-purple?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 
+> 📖 [中文版](ReadMe_cn.md)
+
 ## Product Overview
 
-LazyBug is a "Cursor-like" intelligent coding assistant extension designed specifically for Visual Studio. It integrates Large Language Model (LLM) capabilities to provide developers with intelligent code creation, refactoring, and Q&A experiences. The extension supports multiple mainstream AI service providers, enabling developers to enjoy AI-assisted programming within their familiar IDE environment.
+LazyBug Copilot is a "Cursor-like" intelligent coding assistant extension designed specifically for Visual Studio. It integrates Large Language Model (LLM) capabilities to provide developers with intelligent code creation, refactoring, and Q&A experiences. The extension supports multiple mainstream AI service providers, enabling developers to enjoy AI-assisted programming within their familiar IDE environment.
 
 ![screenshot](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/screenshot.gif)
 
@@ -39,25 +41,30 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
 ## Core Features
 
 - **Multi-Turn Intelligent Chat** — Markdown-based chat content. Session history stored per VS solution.
+- **Session Management** — Switch between historical sessions, one-click rollback to any previous state, session favorites management, and cost statistics per session.
 - **Symbol Link Recognition** — Clickable symbol links in the chat window for quick navigation to definitions.
 - **Smart Code Editing** — AI directly modifies project files with multi-file support, before/after Diff View, modification tracking, undo/redo , and file backup.
-- **Automatic Code Database** — Automatically builds a code database from all files in your solution for fast search and context retrieval.
-- **Codebase Search** — Fast text and symbol search for ultra-large projects (million-line scale, C/C++/C#). Text search is significantly faster than ripgrep, especially in large codebases. Symbol search works out of the box — no LSP configuration required. AI automatically reads related files for context.
-- **Smart Input Box** — Tag-based file attachment system with `@` auto-completion, input history (`PageUp`/`PageDown`), quick model switching, and direct image paste.
+- **Automatic Code Database** — Automatically builds a code database from all files in your solution with incremental updates.
+- **Codebase Search** — Fast text search for ultra-large projects (million-line scale). Significantly faster than ripgrep, especially in large codebases. 
+- **Symbol Search** — Fast symbol search for C/C++/C# codes. Works out of the box — no LSP configuration required.
+- **Smart Input Box** — Tag-based file attachment system with `@` auto-completion, input history (`PageUp`/`PageDown`), quick model switching.
 
 ![chatinput](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/chatinput.jpg)
+
+- **Image Attachment** — Paste images directly into the chat input to send to vision-capable LLMs.
+
 ![image support](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/image_support2.jpg)
 
-- **Multi-Model Support** — Built-in providers: OpenAI, Anthropic, Google Gemini, OpenRouter, Moonshot (Kimi), z.ai (GLM), DeepSeek. Supports custom API endpoints and local LLMs (Ollama, LM Studio).
+- **Multi-Model Support** — Customizable API endpoints. Supports mainstream LLMs: OpenAI, Anthropic, Google Gemini, OpenRouter, Moonshot (Kimi), z.ai (GLM), DeepSeek and more. Also supports local LLMs (Ollama, LM Studio).
 - **Multi-API Format** — Supports three API formats: OpenAI-compatible, Anthropic, and Gemini.
 
 ![provider](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/provider.jpg)
 
-- **Skill System** — Browse, create, rename, and toggle skills via a management panel. Supports BuiltIn, Global, and Project-level skills. Use AI to edit or create new skills.
+- **Skill System** — Browse, create, rename, and toggle skills via a management panel. Supports BuiltIn, Global, and Project-level skills. Allow using AI to edit or create new skills.
 
 ![skill](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/skill.jpg)
 
-- **Custom Prompts** — `global_rules.txt` and `project_rules.txt` for customized prompts; `cli_whitelist.ini` for trusted CLI commands.
+- **Custom Prompts** — `global_rules.txt` and `project_rules.txt` for customized prompts; 
 
 ![settings](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/settings2.jpg)
 
@@ -65,16 +72,13 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
 
 ![output](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/output_10fps.gif)
 
-- **Context Usage Control** — Real-time context usage display with 5 context levels. Allow keeping context under relatively low level (<30k tokens) even in extremely long conversations while maintaining high response quality. Automatic compression/decompression when context level changes.
+- **Context Usage Control** — Real-time context usage display with 5 context levels. Allow keeping context under relatively low level (< 30k tokens) even in extremely long conversations while maintaining high response quality. Automatic compression/decompression when context level changes.
 
 ![contextlevel](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/contextlevel.jpg)
 
-- **MCP Support** — Model Context Protocol support via stdio and URL, with a built-in UI to manage MCP servers.
+- **MCP Support** — Model Context Protocol server support via stdio and URL, with a built-in UI to manage them.
 
 ![mcp](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/createmcp.gif)
-- **Session Management** — Switch between historical sessions, one-click rollback to any previous state, favorites management, and cost statistics per session.
-- **Image Attachment** — Paste images directly into the chat input to send to vision-capable LLMs.
-- **UI Scaling** — Hold `Ctrl` and scroll to freely zoom the chat interface and text size.
 
 
 
@@ -135,6 +139,4 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
 
 ## Report an Issue
 
-If you encounter any bugs or have suggestions for improvement, please submit an issue on GitHub. Your feedback is the driving force behind our continuous improvement!
-
-- 🐛 **GitHub Issues**: [https://github.com/ixnehc/LazyBug-Copilot-Publish/issues](https://github.com/ixnehc/LazyBug-Copilot-Publish/issues)
+If you encounter any bugs or have suggestions for improvement, please report [here](https://github.com/ixnehc/LazyBug-Copilot-Publish/issues). Your feedback is the driving force behind our continuous improvement!
