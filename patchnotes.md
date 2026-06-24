@@ -1,5 +1,11 @@
 ﻿# LazyBug Version History
 
+## Version 0.19.1
+
+- Added a **Report Issue** command in the settings menu
+
+---
+
 ## Version 0.19 Release Notes
 
 **Features**
