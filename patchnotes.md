@@ -1,5 +1,26 @@
 ﻿# LazyBug Version History
 
+## Version 0.19 Release Notes
+
+**Features**
+
+- Added MCP support (stdio and URL)
+- Added a UI to manage MCPs
+- Added cache rate in the cost statistics label
+
+**Bug Fixes**
+
+- Fix an issue that sometimes the reasoning_content is not correctly sent back to LLM for Kimi and DeepSeek, which results in significant performance degrade in complex tasks
+- Fix a potential crash when outputing log.
+- Disabled the bash tool when bash is not available on current system
+- Enabled streaming tool calls for the GLM API
+- Fixed an issue where starting a new conversation after rolling back all previous conversations would reset the chat title
+- Fixed an issue where the chat input window could not regain focus when the Visual Studio window was brought back to the foreground
+- Restored the cursor to its previous position after the chat input window regains focus
+- Fixed an issue where token statistics would become excessively large when using certain endpoints
+- Fixed an issue that finding keywords in files will fail when the files are too big
+
+
 ## Version 0.18.1
 
 - Improved context compression quality
