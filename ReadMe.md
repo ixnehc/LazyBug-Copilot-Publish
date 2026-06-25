@@ -1,4 +1,4 @@
-﻿# LazyBug - Visual Studio AI Coding Assistant Extension
+﻿# LazyBug Copilot - Visual Studio AI Coding Assistant Extension
 
 [![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Marketplace-Install-orange?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 [![Version](https://img.shields.io/badge/version-0.19.1-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
