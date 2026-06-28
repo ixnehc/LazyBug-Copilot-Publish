@@ -1,7 +1,7 @@
 ﻿# LazyBug Copilot - Visual Studio AI Coding Assistant Extension
 
 [![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Marketplace-Install-orange?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
-[![Version](https://img.shields.io/badge/version-0.19.1-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
+[![Version](https://img.shields.io/badge/version-0.20-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-purple?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 
 > 📖 [中文版](ReadMe_cn.md)
@@ -14,31 +14,10 @@ LazyBug Copilot is a "Cursor-like" intelligent coding assistant extension design
 
 ---
 
-## Version 0.19.1 Release Notes
+## Version 0.20 Release Notes
 
-- Added a **Report Issue** command in the settings menu
-
----
-
-## Version 0.19 Release Notes
-
-**Features**
-
-- Added MCP support (stdio and URL)
-- Added a UI to manage MCPs
-- Added cache rate in the cost statistics label
-
-**Bug Fixes**
-
-- Fix an issue that sometimes the reasoning_content is not correctly sent back to LLM for Kimi and DeepSeek, which results in significant performance degrade in complex tasks
-- Fix a potential crash when outputing log.
-- Disabled the bash tool when bash is not available on current system
-- Enabled streaming tool calls for the GLM API
-- Fixed an issue where starting a new conversation after rolling back all previous conversations would reset the chat title
-- Fixed an issue where the chat input window could not regain focus when the Visual Studio window was brought back to the foreground
-- Restored the cursor to its previous position after the chat input window regains focus
-- Fixed an issue where token statistics would become excessively large when using certain endpoints
-- Fixed an issue that finding keywords in files will fail when the files are too big
+- Added copy/paste buttons in the Provider & API settings page
+- Added symbol search support for more languages (`*.html`, `*.css`, `*.js`, `*.java`, `*.py`, `*.ts`)
 
 _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md) for full version history._
 
@@ -52,7 +31,7 @@ _See [patchnotes.md](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main
 - **Smart Code Editing** — AI directly modifies project files with multi-file support, before/after Diff View, modification tracking, undo/redo , and file backup.
 - **Automatic Code Database** — Automatically builds a code database from all files in your solution with incremental updates.
 - **Codebase Search** — Fast text search for ultra-large projects (million-line scale). Significantly faster than ripgrep, especially in large codebases. 
-- **Symbol Search** — Fast symbol search for C/C++/C# codes. Works out of the box — no LSP configuration required.
+- **Symbol Search** — Fast symbol search for C/C++/C#/JavaScript/Java/Python/TypeScript codes. Works out of the box — no LSP configuration required.
 - **Smart Input Box** — Tag-based file attachment system with `@` auto-completion, input history (`PageUp`/`PageDown`), quick model switching.
 
 ![chatinput](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/chatinput.jpg)

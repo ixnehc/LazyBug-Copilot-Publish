@@ -1,5 +1,12 @@
 ﻿# LazyBug Version History
 
+## Version 0.20
+
+- Added copy/paste buttons in the Provider & API settings page
+- Added symbol search support for more languages (`*.html`, `*.css`, `*.js`, `*.java`, `*.py`, `*.ts`)
+
+---
+
 ## Version 0.19.1
 
 - Added a **Report Issue** command in the settings menu
