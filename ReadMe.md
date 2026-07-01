@@ -1,7 +1,7 @@
 ﻿# LazyBug Copilot - Visual Studio AI Coding Assistant Extension
 
 [![Visual Studio Marketplace](https://img.shields.io/badge/VS%20Marketplace-Install-orange?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
-[![Version](https://img.shields.io/badge/version-0.20-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
+[![Version](https://img.shields.io/badge/version-0.20.1-blue)](https://github.com/ixnehc/LazyBug-Copilot-Publish/blob/main/patchnotes.md)
 [![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-purple?logo=visual-studio)](https://marketplace.visualstudio.com/items?itemName=IxSoftware.lazybug2026)
 
 > 📖 [中文版](ReadMe_cn.md)
@@ -10,7 +10,13 @@
 
 LazyBug Copilot is a "Cursor-like" intelligent coding assistant extension designed specifically for Visual Studio. It integrates Large Language Model (LLM) capabilities to provide developers with intelligent code creation, refactoring, and Q&A experiences. The extension supports multiple mainstream AI service providers, enabling developers to enjoy AI-assisted programming within their familiar IDE environment.
 
-![screenshot](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/screenshot.gif)
+![screenshot](https://github.com/ixnehc/LazyBug-Copilot-Publish/raw/main/screenshots/screenshot3.gif)
+
+---
+
+## Version 0.20.1 Release Notes
+
+- Fixed an issue where the GLM model would sometimes interrupt unexpectedly
 
 ---
 

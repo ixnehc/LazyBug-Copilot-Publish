@@ -1,5 +1,11 @@
 ﻿# LazyBug Version History
 
+## Version 0.20.1
+
+- Fixed an issue where the GLM model would sometimes disconnect unexpectedly
+
+---
+
 ## Version 0.20
 
 - Added copy/paste buttons in the Provider & API settings page
